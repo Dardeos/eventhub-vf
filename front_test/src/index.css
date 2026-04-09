@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: var(--bg-color);
+  --color-brand-text: var(--text-color);
+  --color-brand-card: var(--card-bg);
+  --color-brand-border: var(--border-color);
+}
+
+/* --- LIGHT MODE (Default/White) --- */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111827;
+  --card-bg: #f9fafb;
+  --border-color: #e5e7eb;
+}
+
+/* --- DARK MODE (Class-based for button toggle) --- */
+.dark {
+  --bg-color: #0f172a;
+  --text-color: #f9fafb;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
